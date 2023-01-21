@@ -1,0 +1,95 @@
+/* Layout
+The designs were created to the following widths:
+
+Mobile: 375px
+Desktop: 1440px
+Colors */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, video {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--light-gray);
+    font-family: 'Outfit', sans-serif;
+}
+
+body p {
+    margin-top: 15px;
+    padding: 0px 10px;
+    height: fit-content;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Outfit', monospace;
+}
+
+p:first-of-type {
+    font-weight: 700;
+}
+
+p:nth-of-type(2) {
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-window {
+    width: 225px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+#qr-code {
+    height: 60%;
+    border-radius: 10px;
+}
